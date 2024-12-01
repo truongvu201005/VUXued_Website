@@ -31,6 +31,7 @@ h1, h2 {
 }
 
 section {
+    text-align: center;
     padding: 20px;
     margin: 20px;
     background-color: white;
@@ -39,15 +40,58 @@ section {
 form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Giúp căn chỉnh các phần tử form ở giữa */
+}
+
+button {  /* Sửa lại thành button */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Chỉnh kích thước vừa đủ */
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px; /* Cách form một chút */
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     background-color: #333;
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Ẩn thông báo lỗi mặc định */
+}
+
+input.error, textarea.error {
+    border: 1px solid red;
+}
+/* Giao diện cho thiết bị nhỏ hơn 768px (mobile) */
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
