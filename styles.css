@@ -79,19 +79,4 @@ footer {
 input.error, textarea.error {
     border: 1px solid red;
 }
-/* Giao diện cho thiết bị nhỏ hơn 768px (mobile) */
-@media (max-width: 768px) {
-    section {
-        padding: 10px;
-        margin: 10px;
-    }
 
-    form {
-        width: 90%;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
